@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamza Habashneh — Final Boss of Duolingo</title>
+  <meta name="description" content="Hamza Habashneh: Professional German & English Survivor. Training to become the final boss of Duolingo." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇩🇪</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Background layers: grid + blobs + floating emoji particles -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+  <div id="particles" class="particles" aria-hidden="true"></div>
+  <div id="bubbles" class="bubbles" aria-hidden="true"></div>
+
+  <!-- Confetti canvas for the "H" easter egg -->
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-brand">
+        <span class="nav-badge">HH</span>
+        Hamza<span class="accent"></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#facts">Facts</a>
+        <a href="#battle">Battle</a>
+        <a href="#routine">Routine</a>
+        <a href="#quotes">Quotes</a>
+        <a href="#meter">Meter</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-inner">
+
+        <div class="hero-avatar" id="hero-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-glow"></div>
+          <img id="avatar-img"
+            src="assets/images/hamza_pic.jpeg"
+            alt="Hamza Habashneh, professional German & English survivor" />
+          <div class="avatar-fallback" id="avatar-fallback" aria-hidden="true">🧑‍🎓</div>
+          <span class="avatar-badge" title="Certified Duolingo Nemesis">🏆</span>
+        </div>
+
+        <span class="hero-kicker">⚠️ WARNING: Bilingual Chaos Detected ⚠️</span>
+
+        <h1 class="hero-title" id="hero-title" title="Click me. I dare you.">
+          Hamza <span class="accent">Habashneh</span>
+        </h1>
+
+        <p class="hero-subtitle" id="hero-subtitle">
+          Professional German &amp; English Survivor 🇩🇪🇬🇧
+        </p>
+
+        <p class="hero-desc">
+          Currently <strong>training to become the final boss of Duolingo</strong>.
+          Side effects may include random switching mid-sentence, aggressive
+          confidence, and a mild allergy to German articles.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#facts" class="btn btn-primary" id="cta-btn">
+            Start Speaking Before Thinking
+            <span class="btn-arrow">→</span>
+          </a>
+          <button class="btn btn-ghost" id="confetti-btn">
+            Press "H" for chaos 🎉
+          </button>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">
+          <span>scroll to witness the legend</span>
+          <span class="scroll-mouse"><span class="scroll-dot"></span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUNNY FACTS -->
+    <section class="section" id="facts">
+      <div class="section-inner">
+        <p class="eyebrow reveal">📂 Classified Intel</p>
+        <h2 class="section-title reveal">Random Facts About Hamza</h2>
+        <p class="section-lead reveal">
+          Compiled by field researchers who survived a conversation with him.
+        </p>
+
+        <div class="grid facts-grid">
+          <div class="card glass reveal"><span class="card-emoji">☕</span><p>Drinks coffee in three languages, none of them correctly ordered.</p></div>
+          <div class="card glass reveal"><span class="card-emoji">💭</span><p>Dreams in subtitles. His subconscious needs closed captions.</p></div>
+          <div class="card glass reveal"><span class="card-emoji">🗣️</span><p>Says <em>"Ja"</em> and <em>"Yes"</em> in the same sentence, just to cover his bases.</p></div>
+          <div class="card glass reveal"><span class="card-emoji">🦉</span><p>Duolingo's owl has a restraining order against him. Mutual respect only.</p></div>
+          <div class="card glass reveal"><span class="card-emoji">🔀</span><p>Can accidentally switch languages mid-conversation without noticing. Or caring.</p></div>
+          <div class="card glass reveal"><span class="card-emoji">🌙</span><p>Firmly believes grammar becomes optional after midnight. Peer-reviewed opinion.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GERMAN VS ENGLISH -->
+    <section class="section alt" id="battle">
+      <div class="section-inner">
+        <p class="eyebrow reveal">🥊 The Eternal Struggle</p>
+        <h2 class="section-title reveal">German vs. English</h2>
+        <p class="section-lead reveal">
+          A scientifically unverified comparison, conducted entirely inside Hamza's head.
+        </p>
+
+        <div class="battle-list">
+          <div class="battle-row reveal">
+            <div class="battle-side de">
+              <span class="flag">🇩🇪</span>
+              <h3>German</h3>
+              <p>One word can legally be its own paragraph.</p>
+            </div>
+            <span class="vs-badge">VS</span>
+            <div class="battle-side en">
+              <span class="flag">🇬🇧</span>
+              <h3>English</h3>
+              <p>One word can mean seventeen unrelated things.</p>
+            </div>
+          </div>
+
+          <div class="battle-row reveal">
+            <div class="battle-side de">
+              <span class="flag">🇩🇪</span>
+              <h3>German</h3>
+              <p>3 genders for nouns, 0 explanations for why.</p>
+            </div>
+            <span class="vs-badge">VS</span>
+            <div class="battle-side en">
+              <span class="flag">🇬🇧</span>
+              <h3>English</h3>
+              <p>0 genders, but spelling that lies to your face.</p>
+            </div>
+          </div>
+
+          <div class="battle-row reveal">
+            <div class="battle-side de">
+              <span class="flag">🇩🇪</span>
+              <h3>German</h3>
+              <p>Compound words so long they need their own zip code.</p>
+            </div>
+            <span class="vs-badge">VS</span>
+            <div class="battle-side en">
+              <span class="flag">🇬🇧</span>
+              <h3>English</h3>
+              <p>Idioms that make zero literal sense whatsoever.</p>
+            </div>
+          </div>
+
+          <div class="battle-row reveal">
+            <div class="battle-side de">
+              <span class="flag">🇩🇪</span>
+              <h3>German</h3>
+              <p>Confidence level: shouting the verb at the end.</p>
+            </div>
+            <span class="vs-badge">VS</span>
+            <div class="battle-side en">
+              <span class="flag">🇬🇧</span>
+              <h3>English</h3>
+              <p>Confidence level: saying "innit" and hoping for the best.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAILY ROUTINE -->
+    <section class="section" id="routine">
+      <div class="section-inner">
+        <p class="eyebrow reveal">🕹️ Boss Training Arc</p>
+        <h2 class="section-title reveal">A Day in Hamza's Life</h2>
+        <p class="section-lead reveal">
+          The daily grind of a man destined to defeat a green owl.
+        </p>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-icon">⏰</span>
+            <div class="timeline-content">
+              <h3>06:45 — Wake Up</h3>
+              <p>Opens eyes. Immediately unsure which language today will be a disaster in.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-icon">🤷</span>
+            <div class="timeline-content">
+              <h3>07:00 — Forget Which Language To Use</h3>
+              <p>Says "Guten Morning" to the mirror. The mirror does not correct him.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-icon">📚</span>
+            <div class="timeline-content">
+              <h3>09:00 — Learn Vocabulary</h3>
+              <p>Learns 40 new words. Retains exactly one: "Achtung."</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-icon">⚔️</span>
+            <div class="timeline-content">
+              <h3>14:00 — Fight German Articles</h3>
+              <p>Der, die, das enter the ring. Only one of them leaves. It's never Hamza's choice.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-icon">🏆</span>
+            <div class="timeline-content">
+              <h3>21:00 — Celebrate Surviving Another Lesson</h3>
+              <p>Streak maintained. Confidence: irrational. Grammar: theoretical.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FUNNY QUOTES -->
+    <section class="section alt" id="quotes">
+      <div class="section-inner">
+        <p class="eyebrow reveal">🎙️ Words of "Wisdom"</p>
+        <h2 class="section-title reveal">Hamza-isms</h2>
+        <p class="section-lead reveal">
+          Motivational quotes, technically spoken by nobody, believed by everybody.
+        </p>
+
+        <div class="quote-spotlight glass reveal">
+          <span class="quote-mark">"</span>
+          <p id="spotlight-quote">Confidence is saying a German word even if you know it's probably wrong.</p>
+          <button class="btn btn-ghost btn-small" id="new-quote-btn">🔁 New Quote</button>
+        </div>
+
+        <div class="grid quotes-grid">
+          <blockquote class="card glass reveal">"If nobody understands you, just say it louder."</blockquote>
+          <blockquote class="card glass reveal">"Fluent enough" is a state of mind, not a skill level.</blockquote>
+          <blockquote class="card glass reveal">"Real recognize real. Real also recognize 'der, die, das' is fake law."</blockquote>
+          <blockquote class="card glass reveal">"Duolingo can send notifications. Duolingo cannot send fear into me anymore."</blockquote>
+          <blockquote class="card glass reveal">"I didn't mispronounce it. I invented a new dialect."</blockquote>
+          <blockquote class="card glass reveal">"Grammar is a suggestion. Vibes are the actual grade."</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- HAMZA METER -->
+    <section class="section" id="meter">
+      <div class="section-inner">
+        <p class="eyebrow reveal">📊 Live Diagnostics</p>
+        <h2 class="section-title reveal">The Hamza Meter™</h2>
+        <p class="section-lead reveal">
+          Real-time stats, verified by absolutely no one.
+        </p>
+
+        <div class="meter-panel glass reveal">
+          <div class="meter-row">
+            <div class="meter-label"><span>🇩🇪 German Power</span><span class="meter-value">99%</span></div>
+            <div class="meter-track"><div class="meter-fill" data-fill="99" style="--fill:0%"></div></div>
+          </div>
+          <div class="meter-row">
+            <div class="meter-label"><span>🇬🇧 English Power</span><span class="meter-value">98%</span></div>
+            <div class="meter-track"><div class="meter-fill" data-fill="98" style="--fill:0%"></div></div>
+          </div>
+          <div class="meter-row">
+            <div class="meter-label"><span>🌀 Confusion Level</span><span class="meter-value">100%</span></div>
+            <div class="meter-track"><div class="meter-fill fill-danger" data-fill="100" style="--fill:0%"></div></div>
+          </div>
+          <div class="meter-row">
+            <div class="meter-label"><span>🔥 Duolingo Streak Energy</span><span class="meter-value">∞</span></div>
+            <div class="meter-track"><div class="meter-fill fill-gold" data-fill="100" style="--fill:0%"></div></div>
+          </div>
+          <div class="meter-row">
+            <div class="meter-label"><span>☕ Coffee Level</span><span class="meter-value">Critical</span></div>
+            <div class="meter-track"><div class="meter-fill fill-danger" data-fill="8" style="--fill:0%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EASTER EGG HINT -->
+    <section class="egg-banner">
+      <p class="reveal">
+        🥚 Psst — try clicking the big title up top, or pressing
+        <kbd>H</kbd> anywhere on this page.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Hamza Habashneh. All rights reserved, none of them enforced.</p>
+  </footer>
+
+  <!-- Random motivational popup -->
+  <div class="toast" id="toast">
+    <span id="toast-text"></span>
+    <button id="toast-close" aria-label="Dismiss">✕</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
